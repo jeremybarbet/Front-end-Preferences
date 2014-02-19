@@ -1,0 +1,41 @@
+[user]
+name = firstname lastname
+email = mail@mail.com
+
+[credential]
+helper = osxkeychain
+
+[alias]
+bi = bisect
+st = status
+ci = commit -m
+rh = reset HEAD
+co = checkout
+s = submodule
+br = branch
+rb = rebase
+diffs = diff --staged
+remotev = remote -v
+lg = log --graph --pretty=log --abbrev-commit --date=relative
+lga = log --graph --pretty=log --abbrev-commit --date=relative --all
+
+[color]
+ui = auto
+branch = auto
+diff = auto
+status = auto
+interactive = auto
+
+[pretty]
+log = tformat:%Cred%h%Creset -%C(yellow)%d %Creset%s %Cgreen(%an — %cr)%Creset
+
+[core]
+editor = vim
+excludesfile = ~/.gitignore_global
+quotepath = false
+
+[push]
+default = tracking
+
+[help]
+autocorrect = 1

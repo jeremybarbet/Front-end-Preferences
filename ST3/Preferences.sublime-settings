@@ -1,0 +1,29 @@
+{
+  // Interfaces preferences
+  "theme": "Spacegray.sublime-theme",
+  "color_scheme": "Packages/User/Color/Custom.tmTheme",
+  "font_face": "SourceCodePro-Light",
+  "font_size": 12.0,
+  "line_padding_bottom": 1,
+  "line_padding_top": 1,
+  "bold_folder_labels": true,
+  "enable_tab_scrolling": false,
+  "scroll_speed": 2.0,
+  "open_files_in_new_window": false,
+  "tab_size": 2,
+  "translate_tabs_to_spaces": true,
+  "save_on_focus_lost": true,
+  "word_wrap": false,
+
+  // Ignores folders/files
+  "ignored_packages":
+  [
+    "Vintage"
+  ],
+  "folder_exclude_patterns":
+  [
+    ".git",
+    ".sass-cache",
+    "tmp"
+  ]
+}
