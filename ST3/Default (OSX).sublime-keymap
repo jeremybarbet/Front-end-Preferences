@@ -13,7 +13,7 @@
     },
 
     {
-      "keys": ["super+o"],
+      "keys": ["super+t"],
       "command": "show_overlay",
       "args": {
         "overlay": "goto"
@@ -29,7 +29,7 @@
     },
 
     {
-      "keys": ["super+t"],
+      "keys": ["super+o"],
       "command": "auto_complete"
     }
 ]
