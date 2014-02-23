@@ -1,6 +1,6 @@
 {
 	"bold_folder_labels": true,
-	"color_scheme": "Packages/User/Color/jbr.tmTheme",
+	"color_scheme": "Packages/Theme - jbr/jbr.tmTheme",
 	"enable_tab_scrolling": false,
 	"folder_exclude_patterns":
 	[
@@ -9,7 +9,7 @@
 		"tmp"
 	],
 	"font_face": "SourceCodePro-Light",
-	"font_size": 12.0,
+	"font_size": 12,
 	"ignored_packages":
 	[
 		"Vintage"
@@ -20,7 +20,7 @@
 	"save_on_focus_lost": true,
 	"scroll_speed": 2.0,
 	"tab_size": 2,
-	"theme": "Spacegray.sublime-theme",
+	"theme": "jbr.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"word_wrap": false
 }
