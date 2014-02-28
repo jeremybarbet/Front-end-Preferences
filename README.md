@@ -8,4 +8,3 @@ Mais aussi mes alias et config pour .git et mes customs prompt pour bash et fish
 ---------
 
 * Le custom fish shell  
-* Les PATH pour fish shell
