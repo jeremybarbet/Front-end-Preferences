@@ -22,5 +22,8 @@
 	"tab_size": 2,
 	"theme": "jbr.sublime-theme",
 	"translate_tabs_to_spaces": true,
+	"trim_trailing_whitespace": true,
+	"default_encoding": "UTF-8",
+	"ensure_newline_at_eof_on_save": true,
 	"word_wrap": false
 }
