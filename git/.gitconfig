@@ -10,6 +10,7 @@ bi = bisect
 st = status
 ci = commit -m
 rh = reset HEAD
+cp = cherry-pick
 co = checkout
 s = submodule
 br = branch
