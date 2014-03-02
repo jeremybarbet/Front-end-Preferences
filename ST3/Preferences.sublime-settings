@@ -1,7 +1,9 @@
 {
 	"bold_folder_labels": true,
 	"color_scheme": "Packages/Theme - jbr/jbr.tmTheme",
+	"default_encoding": "UTF-8",
 	"enable_tab_scrolling": false,
+	"ensure_newline_at_eof_on_save": true,
 	"folder_exclude_patterns":
 	[
 		".git",
@@ -23,7 +25,5 @@
 	"theme": "jbr.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_whitespace": true,
-	"default_encoding": "UTF-8",
-	"ensure_newline_at_eof_on_save": true,
 	"word_wrap": false
 }
