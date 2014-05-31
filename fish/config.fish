@@ -56,3 +56,12 @@ set fish_greeting ""
 setenv JAVA_OPTS "-Xms2048m -Xmx2048m -XX:MaxPermSize=2048m"
 setenv _JAVA_OPTS $JAVA_OPTS
 setenv _JAVA_OPTIONS $JAVA_OPTS
+
+# User $PATH
+set -x PATH $PATH /usr/local/share/npm/lib/
+set -x PATH $PATH /usr/local/Cellar/
+set -x PATH $PATH /usr/local/share/npm/bin/
+set -x PATH $PATH /usr/local/share/npm/lib/node_modules
+
+# User export
+set -x EDITOR subl -w
