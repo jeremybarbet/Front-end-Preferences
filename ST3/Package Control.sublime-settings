@@ -3,9 +3,11 @@
 	[
 		"AdvancedNewFile",
 		"BracketHighlighter",
+		"EJS",
 		"Emmet",
 		"GitGutter",
 		"LESS",
+		"Markdown Preview",
 		"Sass",
 		"SFTP",
 		"Theme - jbr"
