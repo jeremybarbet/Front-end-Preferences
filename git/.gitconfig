@@ -19,6 +19,7 @@ sd = stash drop
 sl = stash list
 sp = stash pop
 s = submodule
+up = pull --rebase
 br = branch
 rb = rebase
 diffs = diff --staged
