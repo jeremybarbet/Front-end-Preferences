@@ -1,0 +1,4 @@
+<snippet>
+	<content><![CDATA[console.log($1);]]></content>
+	<tabTrigger>cl</tabTrigger>
+</snippet>
