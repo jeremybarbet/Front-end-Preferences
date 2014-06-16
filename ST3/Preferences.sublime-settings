@@ -15,7 +15,8 @@
 	"ignored_packages":
 	[
 		"BracketHighlighter",
-		"Vintage"
+		"Vintage",
+		"EJS"
 	],
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
