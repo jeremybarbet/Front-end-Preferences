@@ -22,8 +22,13 @@ s = submodule
 up = pull --rebase
 br = branch
 rb = rebase
+rbm = rebase origin/master
+rba = rebase --abort
+rbc = rebase --continue
+rbs = rebase --skip
 diffs = diff --staged
-remotev = remote -v
+wip = "!sh -c 'git add . && git ci "wip"' -"
+sync = "!sh -c 'git stash && git up && git stash pop' -"
 lg = log --graph --pretty=log --abbrev-commit --date=relative
 lga = log --graph --pretty=log --abbrev-commit --date=relative --all
 
