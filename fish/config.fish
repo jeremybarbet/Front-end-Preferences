@@ -58,6 +58,7 @@ setenv _JAVA_OPTS $JAVA_OPTS
 setenv _JAVA_OPTIONS $JAVA_OPTS
 
 # User $PATH
+set -x PATH $PATH /usr/local/bin
 set -x PATH $PATH /usr/local/share/npm/lib/
 set -x PATH $PATH /usr/local/Cellar/
 set -x PATH $PATH /usr/local/share/npm/bin/
@@ -65,6 +66,7 @@ set -x PATH $PATH /usr/local/share/npm/lib/node_modules
 set -x PATH $PATH /usr/local/bin/gulp
 set -x PATH $PATH /Users/jbr/android-sdk/tools
 set -x PATH $PATH /Users/jbr/android-sdk/platform-tools
+set -gx PATH /usr/local/mysql/bin/ $PATH
 
 # User export
 set -x EDITOR subl -w
