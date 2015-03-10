@@ -14,9 +14,11 @@
 	"font_size": 12,
 	"ignored_packages":
 	[
-		"BracketHighlighter",
 		"Vintage",
-		"EJS"
+		"Markdown Preview",
+		"JsFormat",
+		"EJS",
+		"BracketHighlighter"
 	],
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
