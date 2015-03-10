@@ -1,14 +1,20 @@
 {
+	"in_process_packages":
+	[
+	],
 	"installed_packages":
 	[
 		"AdvancedNewFile",
 		"BracketHighlighter",
 		"EJS",
+		"Elm Language Support",
 		"Emmet",
 		"GitGutter",
 		"JsFormat",
 		"LESS",
 		"Markdown Preview",
+		"OrigamiEmacs",
+		"Package Control",
 		"Sass",
 		"SFTP",
 		"Theme - jbr"
