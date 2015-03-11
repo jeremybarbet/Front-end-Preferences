@@ -25,6 +25,7 @@ upm = pull --rebase origin master
 br = branch
 rb = rebase
 pm = push origin master
+po = push origin
 rbm = rebase origin/master
 rba = rebase --abort
 rbc = rebase --continue
