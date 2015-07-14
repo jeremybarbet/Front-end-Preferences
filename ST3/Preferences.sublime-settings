@@ -1,9 +1,10 @@
 {
-	"bold_folder_labels": true,
-	"color_scheme": "Packages/Theme - jbr/jbr.tmTheme",
+	"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme", // "Packages/Theme - jbr/jbr.tmTheme"
 	"default_encoding": "UTF-8",
 	"enable_tab_scrolling": false,
 	"ensure_newline_at_eof_on_save": true,
+  "always_show_minimap_viewport": true,
+  "bold_folder_labels": true,
 	"folder_exclude_patterns":
 	[
 		".git",
@@ -14,20 +15,22 @@
 	"font_size": 12,
 	"ignored_packages":
 	[
-		"Vintage",
 		"Markdown Preview",
-		"JsFormat",
 		"EJS",
-		"BracketHighlighter"
+		"BracketHighlighter",
+		"Vintage",
+		"JsFormat"
 	],
-	"line_padding_bottom": 1,
-	"line_padding_top": 1,
+	"line_padding_bottom": 2, // 1
+	"line_padding_top": 2, // 1
 	"open_files_in_new_window": false,
 	"save_on_focus_lost": true,
 	"scroll_speed": 2.0,
 	"tab_size": 2,
-	"theme": "jbr.sublime-theme",
+	"theme": "Material-Theme.sublime-theme", //"jbr.sublime-theme"
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_whitespace": true,
-	"word_wrap": false
+	"word_wrap": false,
+	"overlay_scroll_bars": "enabled",
+   "indent_guide_options": [ "draw_normal", "draw_active" ]
 }
