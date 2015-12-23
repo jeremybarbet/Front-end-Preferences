@@ -35,6 +35,10 @@ wip = "!sh -c 'git add . && git ci "wip"' -"
 sync = "!sh -c 'git stash && git up && git stash pop' -"
 lg = log --graph --pretty=log --abbrev-commit --date=relative
 lga = log --graph --pretty=log --abbrev-commit --date=relative --all
+ffs = flow feature start
+fff = flow feature finish
+ffp = flow feature publish
+ffpo = flow feature pull origin
 
 [color]
 ui = auto
