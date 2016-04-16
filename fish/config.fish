@@ -66,14 +66,17 @@ set -x PATH $PATH /usr/local/share/npm/lib/node_modules
 set -x PATH $PATH /usr/local/bin/gulp
 set -x PATH $PATH /Users/jbr/android-sdk/tools
 set -x PATH $PATH /Users/jbr/android-sdk/platform-tools
-set -gx PATH /usr/local/mysql/bin/ $PATH
+set -x PATH $PATH /usr/bin/java
+set -x PATH $PATH /Users/jbr/.nvm
+set -gx PATH $PATH /usr/local/mysql/bin/
 
 # User export
 set -x EDITOR subl -w
 
+# NVM tools
+# https://github.com/Alex7Kom/nvm-fish
 test -s /Users/jbr/.nvm-fish/nvm.fish; and source /Users/jbr/.nvm-fish/nvm.fish
-
-nvm use v0.10.33
+nvm use v5.10.1
 
 alias g='git'
 source /usr/share/bash-completion/completions/git
