@@ -74,10 +74,17 @@ set -gx PATH $PATH /usr/local/mysql/bin/
 set -x EDITOR subl -w
 
 # NVM tools
-# https://github.com/Alex7Kom/nvm-fish
-test -s /Users/jbr/.nvm-fish/nvm.fish; and source /Users/jbr/.nvm-fish/nvm.fish
-nvm use v5.10.1
+# https://github.com/edc/bass
+function nvm
+  bass source ~/.nvm/nvm.sh --no-use ';' nvm $argv ';' nvm use v5.10.1
+end
 
+# Autocompletions for git
 alias g='git'
 source /usr/share/bash-completion/completions/git
 complete -o default -o nospace -F _git g
+
+# Fisher
+set fisher_home ~/.local/share/fisherman
+set fisher_config ~/.config/fisherman
+source $fisher_home/config.fish
