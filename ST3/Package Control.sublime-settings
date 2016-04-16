@@ -1,4 +1,5 @@
 {
+	"bootstrapped": true,
 	"in_process_packages":
 	[
 	],
@@ -11,12 +12,13 @@
 		"Emmet",
 		"GitGutter",
 		"JsFormat",
+		"JSX",
 		"LESS",
 		"Markdown Preview",
+		"Material Theme",
 		"OrigamiEmacs",
 		"Package Control",
 		"Sass",
-		"SFTP",
-		"Theme - jbr"
+		"SFTP"
 	]
 }
