@@ -6,6 +6,9 @@ email = jeremgraph@gmail.com
 helper = osxkeychain
 
 [alias]
+a = add
+d = diff
+s = status
 bi = bisect
 st = status
 ci = commit -m
