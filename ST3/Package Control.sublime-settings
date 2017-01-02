@@ -6,6 +6,7 @@
 	"installed_packages":
 	[
 		"AdvancedNewFile",
+		"Alignment",
 		"BracketHighlighter",
 		"EJS",
 		"Elm Language Support",
@@ -14,11 +15,17 @@
 		"JsFormat",
 		"JSX",
 		"LESS",
+		"Markdown HTML Preview",
 		"Markdown Preview",
 		"Material Theme",
+		"Open-Include",
 		"OrigamiEmacs",
 		"Package Control",
+		"Pretty JSON",
+		"Pug",
 		"Sass",
-		"SFTP"
+		"SFTP",
+		"Stylus",
+		"Theme - jbr"
 	]
 }
