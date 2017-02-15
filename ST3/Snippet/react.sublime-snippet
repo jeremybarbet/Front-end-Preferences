@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+import React, { Component, PropTypes } from 'react';
+
+import s from './${1:${TM_FILENAME/(.+)\..+|.*/$1/:ComponentName}}.scss';
+
+export class ${1:${TM_FILENAME/(.+)\..+|.*/$1/:ComponentName}} extends Component {
+  render() {
+    return ${2:(
+      ${3:<div>${0}</div>}
+    );}
+  }
+}
+]]></content>
+    <tabTrigger>react</tabTrigger>
+</snippet>
