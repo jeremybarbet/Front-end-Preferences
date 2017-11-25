@@ -18,14 +18,16 @@
 		"Markdown HTML Preview",
 		"Markdown Preview",
 		"Material Theme",
-		"Open-Include",
 		"OrigamiEmacs",
 		"Package Control",
 		"Pretty JSON",
 		"Pug",
 		"Sass",
 		"SFTP",
-		"Stylus",
-		"Theme - jbr"
+		"Stylus"
+	],
+	"repositories":
+	[
+		"https://github.com/JeremDsgn/JSX"
 	]
 }
