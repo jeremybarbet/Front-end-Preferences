@@ -49,6 +49,23 @@ function fish_prompt --description 'Write out the prompt'
   end
 end
 
+# rbenv
+set -gx PATH '/Users/jeremy/.rbenv/shims' $PATH
+set -gx RBENV_SHELL fish
+source '/usr/local/Cellar/rbenv/1.1.2/libexec/../completions/rbenv.fish'
+command rbenv rehash 2>/dev/null
+function rbenv
+  set command $argv[1]
+  set -e argv[1]
+
+  switch "$command"
+  case rehash shell
+    source (rbenv "sh-$command" $argv|psub)
+  case '*'
+    command rbenv "$command" $argv
+  end
+end
+
 # Remove greeting
 set fish_greeting ""
 
@@ -58,33 +75,26 @@ setenv _JAVA_OPTS $JAVA_OPTS
 setenv _JAVA_OPTIONS $JAVA_OPTS
 
 # User $PATH
+# set -gx PATH $PATH /opt/local/bin
+set -gx PATH $PATH /usr/local/opt/openssl/bin
 set -x PATH $PATH /usr/local/bin
-set -x PATH $PATH /usr/local/share/npm/lib/
 set -x PATH $PATH /usr/local/Cellar/
-set -x PATH $PATH /usr/local/share/npm/bin/
-set -x PATH $PATH /usr/local/share/npm/lib/node_modules
-set -x PATH $PATH /usr/local/bin/gulp
-set -x PATH $PATH /Users/jbr/android-sdk/tools
-set -x PATH $PATH /Users/jbr/android-sdk/platform-tools
-set -x PATH $PATH /usr/bin/java
-set -x PATH $PATH /Users/jbr/.nvm
-set -gx PATH $PATH /usr/local/mysql/bin/
+set -gx ANDROID_SDK_ROOT /Users/jeremy/Library/Android/sdk
+set -gx ANDROID_HOME /Users/jeremy/Library/Android/sdk
+set -gx PATH $PATH /Users/jeremy/Library/Android/sdk/tools
+set -gx PATH $PATH /Users/jeremy/Library/Android/sdk/platform-tools
+# set -x PATH $PATH /usr/local/share/npm/lib/
+# set -x PATH $PATH /usr/local/share/bin/npm/
+# set -x PATH $PATH /usr/local/share/npm/lib/node_modules
+# set -x PATH $PATH /usr/local/bin/gulp
+# set -x PATH $PATH /usr/bin/java
+# set -gx PATH $PATH /usr/local/mysql/bin/
+# set -x PATH $PATH /usr/local/share/android-sdk
 
 # User export
 set -x EDITOR subl -w
 
-# NVM tools
-# https://github.com/edc/bass
-function nvm
-  bass source ~/.nvm/nvm.sh --no-use ';' nvm $argv ';' nvm use v5.10.1
-end
-
 # Autocompletions for git
 alias g='git'
-source /usr/share/bash-completion/completions/git
-complete -o default -o nospace -F _git g
-
-# Fisher
-set fisher_home ~/.local/share/fisherman
-set fisher_config ~/.config/fisherman
-source $fisher_home/config.fish
+# source /usr/share/bash-completion/completions/git
+# complete -o default -o nospace -F _git g
