@@ -1,5 +1,5 @@
-Front-end-Preferences
-=====================
+.config
+=======
 
-Petit répertoire pour stocker toutes mes préférences liées à Sublime Text 2 et 3.
-Mais aussi mes alias et config pour .git et mes customs prompt pour bash et fish.
+- Contains config files for fish shell and git.
+- Vscode preferences are saved under git gist.

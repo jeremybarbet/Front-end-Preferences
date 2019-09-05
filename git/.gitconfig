@@ -45,7 +45,7 @@ ffp = flow feature publish
 ffpo = flow feature pull origin
 forget = update-index --assume-unchanged
 unforget = update-index --no-assume-unchanged
-forgotten = ! git ls-files -v | grep ^[a-z]
+forgotten = !git ls-files -v | grep ^[a-z]
 
 [color]
 ui = auto
