@@ -50,21 +50,21 @@ function fish_prompt --description 'Write out the prompt'
 end
 
 # rbenv
-set -gx PATH '/Users/jeremy/.rbenv/shims' $PATH
-set -gx RBENV_SHELL fish
-source '/usr/local/Cellar/rbenv/1.1.2/libexec/../completions/rbenv.fish'
-command rbenv rehash 2>/dev/null
-function rbenv
-  set command $argv[1]
-  set -e argv[1]
+# set -gx PATH '/Users/jeremy/.rbenv/shims' $PATH
+# set -gx RBENV_SHELL fish
+# source '/usr/local/Cellar/rbenv/1.1.2/libexec/../completions/rbenv.fish'
+# command rbenv rehash 2>/dev/null
+# function rbenv
+#   set command $argv[1]
+#   set -e argv[1]
 
-  switch "$command"
-  case rehash shell
-    source (rbenv "sh-$command" $argv|psub)
-  case '*'
-    command rbenv "$command" $argv
-  end
-end
+#   switch "$command"
+#   case rehash shell
+#     source (rbenv "sh-$command" $argv|psub)
+#   case '*'
+#     command rbenv "$command" $argv
+#   end
+# end
 
 # Remove greeting
 set fish_greeting ""
