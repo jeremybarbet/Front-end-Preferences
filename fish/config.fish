@@ -17,7 +17,7 @@ function fish_prompt --description 'Write out the prompt'
   end
 
   if not set -q __git_cb
-    set __git_cb ":"(set_color $rouge)(git branch 2>/dev/null | sed -n '/\* /s///p')(set_color $blanc)""
+    set __git_cb (set_color $rouge)" ‹"(git branch 2>/dev/null | sed -n '/\* /s///p')"› "(set_color $blanc)
   end
 
   switch $USER
