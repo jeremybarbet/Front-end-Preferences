@@ -17,7 +17,7 @@ function fish_prompt --description 'Write out the prompt'
   end
 
   if not set -q __git_cb
-  set __git_cb ":"(set_color $rouge)(git branch ^/dev/null | grep \* | sed 's/* //')(set_color $blanc)""
+    set __git_cb ":"(set_color $rouge)(git branch 2>/dev/null | sed -n '/\* /s///p')(set_color $blanc)""
   end
 
   switch $USER
@@ -49,23 +49,6 @@ function fish_prompt --description 'Write out the prompt'
   end
 end
 
-# rbenv
-# set -gx PATH '/Users/jeremy/.rbenv/shims' $PATH
-# set -gx RBENV_SHELL fish
-# source '/usr/local/Cellar/rbenv/1.1.2/libexec/../completions/rbenv.fish'
-# command rbenv rehash 2>/dev/null
-# function rbenv
-#   set command $argv[1]
-#   set -e argv[1]
-
-#   switch "$command"
-#   case rehash shell
-#     source (rbenv "sh-$command" $argv|psub)
-#   case '*'
-#     command rbenv "$command" $argv
-#   end
-# end
-
 # Remove greeting
 set fish_greeting ""
 
@@ -91,10 +74,8 @@ set -gx PATH $PATH /Users/jeremy/Library/Android/sdk/platform-tools
 # set -gx PATH $PATH /usr/local/mysql/bin/
 # set -x PATH $PATH /usr/local/share/android-sdk
 
-# User export
-set -x EDITOR subl -w
-
 # Autocompletions for git
 alias g='git'
-# source /usr/share/bash-completion/completions/git
-# complete -o default -o nospace -F _git g
+
+# Rvm
+rvm default
