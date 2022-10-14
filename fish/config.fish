@@ -53,7 +53,7 @@ end
 set fish_greeting ""
 
 # Java options
-setenv JAVA_OPTS "-Xms2048m -Xmx2048m -XX:MaxPermSize=2048m"
+setenv JAVA_OPTS "-Xms2048m -Xmx2048m"
 setenv _JAVA_OPTS $JAVA_OPTS
 setenv _JAVA_OPTIONS $JAVA_OPTS
 
@@ -62,10 +62,13 @@ setenv _JAVA_OPTIONS $JAVA_OPTS
 set -gx PATH $PATH /usr/local/opt/openssl/bin
 set -x PATH $PATH /usr/local/bin
 set -x PATH $PATH /usr/local/Cellar/
+set -gx ANDROID_SDK /Users/jeremy/Library/Android/sdk
 set -gx ANDROID_SDK_ROOT /Users/jeremy/Library/Android/sdk
 set -gx ANDROID_HOME /Users/jeremy/Library/Android/sdk
 set -gx PATH $PATH /Users/jeremy/Library/Android/sdk/tools
+set -gx PATH $PATH /Users/jeremy/Library/Android/sdk/emulator/emulator
 set -gx PATH $PATH /Users/jeremy/Library/Android/sdk/platform-tools
+set -g fish_user_paths "/usr/local/opt/ruby/bin" $fish_user_paths
 # set -x PATH $PATH /usr/local/share/npm/lib/
 # set -x PATH $PATH /usr/local/share/bin/npm/
 # set -x PATH $PATH /usr/local/share/npm/lib/node_modules
@@ -73,6 +76,11 @@ set -gx PATH $PATH /Users/jeremy/Library/Android/sdk/platform-tools
 # set -x PATH $PATH /usr/bin/java
 # set -gx PATH $PATH /usr/local/mysql/bin/
 # set -x PATH $PATH /usr/local/share/android-sdk
+set -x PATH $PATH $HOME/.fastlane/bin
+# set -x PATH $PATH /usr/local/Cellar/rabbitmq/3.8.11/sbin/
+set -x PATH $PATH ~/.cargo/bin
+
+source
 
 # Autocompletions for git
 alias g='git'
