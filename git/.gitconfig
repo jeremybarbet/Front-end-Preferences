@@ -1,83 +1,83 @@
 [user]
-name = Jérémy Barbet
-email = jeremgraph@gmail.com
+  name = Jérémy Barbet
+  email = jeremgraph@gmail.com
 
 [credential]
-helper = osxkeychain
+  helper = osxkeychain
 
 [alias]
-a = add
-d = diff
-s = status
-c = commit -m
-bi = bisect
-st = status
-ci = commit -m
-cie = commit --allow-empty -m
-ca = commit --amend -m
-cn = commit --amend --no-edit
-di = "!git diff --color $@ | diff-so-fancy"
-rh = reset HEAD
-r1 = reset HEAD^1
-cp = cherry-pick
-cpc = cherry-pick --continue
-cpa = cherry-pick --abort
-co = checkout
-sa = stash apply
-sd = stash drop
-sl = stash list
-sp = stash pop
-up = pull --rebase
-upo = pull --rebase origin
-upm = pull --rebase origin master
-upmm = pull --rebase origin main
-ma = merge --abort
-br = branch
-rb = rebase
-po = push origin
-pm = push origin master
-pmm = push origin main
-rbm = rebase origin/master
-rbmm = rebase origin/main
-rba = rebase --quit
-rbc = rebase --continue
-rbs = rebase --skip
-diffs = diff --staged
-wip = "!sh -c 'git add . && git ci "wip"' -"
-sync = "!sh -c 'git stash && git up && git stash pop' -"
-lg = log --graph --pretty=log --abbrev-commit --date=relative
-lga = log --graph --pretty=log --abbrev-commit --date=relative --all
-ffs = flow feature start
-fff = flow feature finish
-ffp = flow feature publish
-ffpo = flow feature pull origin
-forget = update-index --assume-unchanged
-unforget = update-index --no-assume-unchanged
-forgotten = !git ls-files -v | grep ^[a-z]
+  a = add
+  d = diff
+  s = status
+  c = commit -m
+  bi = bisect
+  st = status
+  ci = commit -m
+  cie = commit --allow-empty -m
+  ca = commit --amend -m
+  cn = commit --amend --no-edit
+  di = "!git diff --color $@ | diff-so-fancy"
+  rh = reset HEAD
+  r1 = reset HEAD^1
+  cp = cherry-pick
+  cpc = cherry-pick --continue
+  cpa = cherry-pick --abort
+  co = checkout
+  sa = stash apply
+  sd = stash drop
+  sl = stash list
+  sp = stash pop
+  up = pull --rebase
+  upo = pull --rebase origin
+  upm = pull --rebase origin master
+  upmm = pull --rebase origin main
+  ma = merge --abort
+  br = branch
+  rb = rebase
+  po = push origin
+  pm = push origin master
+  pmm = push origin main
+  rbm = rebase origin/master
+  rbmm = rebase origin/main
+  rba = rebase --quit
+  rbc = rebase --continue
+  rbs = rebase --skip
+  diffs = diff --staged
+  wip = "!sh -c 'git add . && git ci "wip"' -"
+  sync = "!sh -c 'git stash && git up && git stash pop' -"
+  lg = log --graph --pretty=log --abbrev-commit --date=relative
+  lga = log --graph --pretty=log --abbrev-commit --date=relative --all
+  ffs = flow feature start
+  fff = flow feature finish
+  ffp = flow feature publish
+  ffpo = flow feature pull origin
+  forget = update-index --assume-unchanged
+  unforget = update-index --no-assume-unchanged
+  forgotten = !git ls-files -v | grep ^[a-z]
 
 [color]
-ui = auto
-branch = auto
-diff = auto
-status = auto
-interactive = auto
+  ui = auto
+  branch = auto
+  diff = auto
+  status = auto
+  interactive = auto
 
 [pretty]
-log = tformat:%Cred%h%Creset -%C(yellow)%d %Creset%s %Cgreen(%an — %cr)%Creset
+  log = tformat:%Cred%h%Creset -%C(yellow)%d %Creset%s %Cgreen(%an — %cr)%Creset
 
 [core]
-editor = nano
-excludesfile = ~/.gitignore_global
-quotepath = false
+  editor = nano
+  excludesfile = ~/.gitignore_global
+  quotepath = false
 
 [push]
-default = tracking
+  default = tracking
 
 [help]
-autocorrect = 1
+  autocorrect = 1
 
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
