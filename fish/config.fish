@@ -52,38 +52,35 @@ end
 # Remove greeting
 set fish_greeting ""
 
-# Java options
+# Aliases
+alias g='git'
+
+# JAVA options
 setenv JAVA_OPTS "-Xms2048m -Xmx2048m"
 setenv _JAVA_OPTS $JAVA_OPTS
 setenv _JAVA_OPTIONS $JAVA_OPTS
 
-# User $PATH
-# set -gx PATH $PATH /opt/local/bin
-set -gx PATH $PATH /usr/local/opt/openssl/bin
-set -x PATH $PATH /usr/local/bin
-set -x PATH $PATH /usr/local/Cellar/
-set -gx ANDROID_SDK /Users/jeremy/Library/Android/sdk
+# Root for Brew and its executable
+set -gx PATH $PATH /opt/homebrew/
+set -gx PATH $PATH /opt/homebrew/bin
+
+# Android SDKs
 set -gx ANDROID_SDK_ROOT /Users/jeremy/Library/Android/sdk
-set -gx ANDROID_HOME /Users/jeremy/Library/Android/sdk
 set -gx PATH $PATH /Users/jeremy/Library/Android/sdk/tools
-set -gx PATH $PATH /Users/jeremy/Library/Android/sdk/emulator/emulator
+set -gx PATH $PATH /Users/jeremy/Library/Android/sdk/emulator
 set -gx PATH $PATH /Users/jeremy/Library/Android/sdk/platform-tools
-set -g fish_user_paths "/usr/local/opt/ruby/bin" $fish_user_paths
-# set -x PATH $PATH /usr/local/share/npm/lib/
-# set -x PATH $PATH /usr/local/share/bin/npm/
-# set -x PATH $PATH /usr/local/share/npm/lib/node_modules
-# set -x PATH $PATH /usr/local/bin/gulp
-# set -x PATH $PATH /usr/bin/java
-# set -gx PATH $PATH /usr/local/mysql/bin/
-# set -x PATH $PATH /usr/local/share/android-sdk
-set -x PATH $PATH $HOME/.fastlane/bin
-# set -x PATH $PATH /usr/local/Cellar/rabbitmq/3.8.11/sbin/
-set -x PATH $PATH ~/.cargo/bin
 
-source
+# Ruby
+set -gx fish_user_paths $fish_user_paths "/usr/local/opt/ruby/bin"
 
-# Autocompletions for git
-alias g='git'
+# Redis server
+set -gx PATH $PATH /opt/homebrew/Caskroom/redis-stack-server/6.2.4-v3/bin
+
+# Global Yarn packages
+set -gx PATH $PATH /Users/jeremy/.config/yarn/global
 
 # Rvm
 rvm default
+
+# Apply changes straight away when saving this file
+source
