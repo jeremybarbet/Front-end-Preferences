@@ -73,9 +73,6 @@ set -gx PATH $PATH /Users/jeremy/Library/Android/sdk/platform-tools
 # Ruby
 set -gx fish_user_paths $fish_user_paths "/usr/local/opt/ruby/bin"
 
-# Redis server
-set -gx PATH $PATH /opt/homebrew/Caskroom/redis-stack-server/6.2.4-v3/bin
-
 # Global Yarn packages
 set -gx PATH $PATH /Users/jeremy/.config/yarn/global
 
