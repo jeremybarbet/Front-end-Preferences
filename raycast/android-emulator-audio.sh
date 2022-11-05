@@ -17,18 +17,6 @@ function run_sed {
   sed -i '' $1 $2
 }
 
-temp_avd_path=""
-has_wipe_option=0
-# Read user arguments
-for arg in "$@"
-do
-    if [ $arg == "--wipe" ]; then
-        has_wipe_option=1
-    else
-        temp_avd_path=$arg
-    fi
-done
-
 echo "Processing emulators from: $AVD_PATH"
 
 for emulator in $(find $AVD_PATH -type d -name '*.avd'); do
